@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="./calc.css">
+</head>
+<body  style="background-color: black;">
+    <div class="container  p bg-light box1">
+        <form action="" >
+            <h3 class="m-4 mb-2">Calculator</h3>
+            <input id="result" type="text" class="form-control box">
+            <div class="btn1">
+                <button type="button" onclick="display(1)" class="btn btn-light box">1</button>
+                <button type="button" onclick="display(2)"  class="btn btn-light box">2</button>
+                <button type="button" onclick="display(3)"  class="btn btn-light box">3</button>
+                <button type="button" onclick="display('/')"  class="btn btn-light box">/</button>
+            </div>
+            <div class="btn1">
+                <button type="button" onclick="display(4)"  class="btn btn-light box">4</button>
+                <button type="button" onclick="display(5)"  class="btn btn-light box">5</button>
+                <button type="button" onclick="display(6)"  class="btn btn-light box">6</button>
+                <button type="button" onclick="display('*')"  class="btn btn-light box">*</button>
+
+            </div>
+            <div class="btn1">
+                <button type="button" onclick="display(7)" class="btn btn-light box">7</button>
+                <button type="button" onclick="display(8)" class="btn btn-light box">8</button>
+                <button type="button" onclick="display(9)"  class="btn btn-light box">9</button>
+                <button type="button" onclick="display('-')"  class="btn btn-light box">-</button>
+
+            </div>
+            <div class="btn1">
+                <button type="button" onclick="display(0)"  class="btn btn-light box">0</button>
+                <button type="button" onclick="allclear()"  class="btn btn-light box">AC</button>
+                <button type="button" onclick="display('+')"  class="btn btn-light box">+</button>
+                <button type="button" onclick="checkvalue()"  class="btn btn-light box">=</button>
+
+            </div>
+            <div>
+                <button type="button" onclick="backspace()" class="btn btn-light ps-5 pe-5 mt-5 mb-3 box">&#9003;</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
